@@ -2,24 +2,26 @@
   "name": "rut-ts",
   "version": "1.0.0",
   "description": "NPM library to validate and format RUT (Chilean identification number)",
-  "main": "./lib/index.ts",
+  "main": "./dist/index.js",
   "module": "./dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "lib/"
+    "dist/**/*"
   ],
   "scripts": {
     "tsc": "tsc -p tsconfig.publish.json",
-    "lint": "eslint --report-unused-disable-directives ./lib/** ./test/** --ext .ts",
+    "lint": "tsc --noEmit && eslint --report-unused-disable-directives ./lib/** ./test/** --ext .ts",
     "prettier": "prettier --write lib/**/*.ts test/**/*.ts",
     "test": "nyc --reporter=html mocha -r ts-node/register 'test/**/*.ts' --exit",
-    "prepublish": "npm run tsc"
+    "prepare": "npm run tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/abstract-cl/rut-ts.git"
   },
   "keywords": [
-    "lib"
+    "lib",
+    "TypeScript"
   ],
   "author": "Abstract",
   "license": "ISC",
