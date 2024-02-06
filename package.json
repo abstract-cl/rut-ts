@@ -29,9 +29,6 @@
     "url": "https://github.com/abstract-cl/rut-ts/issues"
   },
   "homepage": "https://github.com/abstract-cl/rut-ts#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/abstract-cl"
-  },
   "devDependencies": {
     "@types/chai": "^4.2.14",
     "@types/mocha": "^8.2.0",
