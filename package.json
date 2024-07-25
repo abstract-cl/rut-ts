@@ -1,6 +1,6 @@
 {
   "name": "@abstract-cl/rut-ts",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "NPM library to validate and format RUT (Chilean identification number)",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
